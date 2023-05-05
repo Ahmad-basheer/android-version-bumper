@@ -5,6 +5,7 @@ LABEL "com.github.actions.description"="Automated version bump for Android apps.
 LABEL "com.github.actions.icon"="chevron-up"
 LABEL "com.github.actions.color"="blue"
 
+RUN echo "deb http://security.debian.org/debian-security bullseye-security main contrib non-free" > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y git
 
